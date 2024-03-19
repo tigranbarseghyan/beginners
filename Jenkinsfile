@@ -4,7 +4,8 @@ pipeline {
 	stages {
 		stage('Stage 1'){
 			steps {
-				echo "Hello world"
+				sh 'chmod +x ./a.sh'
+				sh './script.sh'
 			}
 		}
 	}
